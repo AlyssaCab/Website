@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&family=Lora&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Alyssa Cabana</title>
+</head>
+<body>
+    <ul class="tab-bar">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#proj">Projects</a></li>
+        <li><a href="#exp">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <img class="back" src="images/hexagons.jpg" alt="Background">
+
+    <h1>Hi, my name is <span class="name">Alyssa Cabana!</span></h1>
+
+    <div class="About">
+        <h2 id="about">About Me</h2>
+        <p>I am a third-year student at the University of Windsor, pursuing a Bachelor of Honors in Business and Computer Science. My interest in coding began in high school at Sandwich Secondary, and since then, I’ve continued to build my skills both in and outside of the classroom.
+            <br><br>Outside my studies, I’ve always had a strong interest in gaming and technology, which inspired me to build my own desktop. This hands-on experience allowed me to deepen my understanding of computer hardware and software, and enhance my practical knowledge of system components.
+            <br><br>I am excited to continue to expand my knowledge in the computer science field and look forward to future opportunities to continue to grow professionally.</p>
+    </div>
+
+    <h2 id="skills">Software and Design Skills</h2>
+    <div class="Skills">
+        <img src="images/java.png" alt="Java">
+        <img src="images/c.png" alt="C">
+        <img src="images/html.png" alt="HTML">
+        <img src="images/css.png" alt="CSS">
+        <img src="images/javascript.png" alt="JavaScript">
+        <img src="images/ps.png" alt="Photoshop">
+        <img src="images/toonboom.jpg" alt="Toon Boom">
+    </div>
+
+    <h2 id="proj">My Projects</h2>
+    <p>This section consists of projects that showcase my skills and abilities.</p>
+    <div class="Proj">
+        <div class="project-card">
+            <div class="img-container">
+                <img src="images/desktop.png" alt="Gaming Desktops">
+            </div>
+            <div class="project-info">
+                <h3>Gaming Desktop</h3>
+                <p>Researched and assembled custom AMD-based desktop computers, selecting compatible hardware to meet both performance and budget goals.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="img-container">
+                <img src="images/binarycalc.webp" alt="Binary Arithmetic & Conversion Calculator">
+            </div>
+            <div class="project-info">
+                <h3>Binary Arithmetic & Conversions Calculator</h3>
+                <p>Programmed in C to perform binary operations and convert between number bases, using modular code with separate header and source files.</p>
+                <a href="https://github.com/AlyssaCab/Binary-Arithmetic-and-Conversion-Calculator" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="img-container">
+                <img src="images/calc.png" alt="Command-Line Calculator">
+            </div>
+            <div class="project-info">
+                <h3>Command-Line Calculator</h3>
+                <p>Developed a C-based command-line calculator with binary/unary operations, variable support, and built-in input validation through testing functions.</p>
+                <a href="https://github.com/AlyssaCab/Command-Line-Calculator" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="exp">Related Work Experience</h2>
+    <div>
+        <h3>IT Technician Co-op Student</h3>
+        <h4>Agriculture and Agri-Food Canada</h4>
+        <ul>
+            <li>Assisted users with technology-related inquiries and issues, utilizing tools such as Active Directory and Microsoft Configuration Manager.</li>
+            <li>Created and managed support tickets in Assyst and BCM Helix for issue tracking and resolution.</li>
+            <li>Set up laptops for new users and updated the Knowledge Workspace inventory system.</li>
+            <li>Utilized remote desktop software to access and support user computers off-site.</li>
+            <li>Assisted with mobile device inquiries and troubleshooting requests.</li>
+            <li>Configured and deployed mobile phones for new users.</li>
+        </ul>
+    </div>
+
+    <div id="contact" class="contact-info">
+        <ul>
+            <li><button onclick="openPopup()" class="email-button"><i class="fas fa-envelope"></i> Email</button></li>
+            <li><a href="https://www.linkedin.com/in/AlyssaCab/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/AlyssaCab/" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="images/Resume (Alyssa Cabana).pdf" download><i class="fas fa-file-alt"></i> Resume</a></li>
+        </ul>
+    </div>
+
+    <div id="emailPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Send me a message</h2>
+            <form id="contactForm" action="https://formspree.io/f/xkgrqabw" method="POST">
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <input type="hidden" name="_subject" value="New message from your website">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

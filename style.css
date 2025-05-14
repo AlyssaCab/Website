@@ -1,0 +1,280 @@
+html {
+    background-color: #000;
+    color: #FFF;
+    text-align: left;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 90px;
+    font-style: bold;
+    margin: 75px;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-left: 27px;
+    margin-bottom: 5px;
+    font-style: bold;
+    scroll-margin-top: 50px;
+}
+
+h3 {
+    margin-left: 27px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+h4 {
+    margin-left: 27px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #A9A9A9;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 30px;
+    font-size: 20px;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.name {
+    color: #6A0DAD;
+}
+
+.tab-bar {
+    text-align: right;
+    overflow: hidden;
+    padding: 2px;
+    position: relative;
+}
+
+.tab-bar li {
+    display: inline-block;
+    padding: 5px;
+    border-right: 1px solid #808080;
+}
+
+.tab-bar li a:hover {
+    color: #6A0DAD;
+}
+
+.About {
+    position: relative;
+    padding-top: 60px;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70vh;
+    object-fit: cover;
+    margin-top: 65px;
+    filter: blur(5px);
+}
+
+.Skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 190px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    padding: 0 40px;
+}
+
+.Skills img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    animation: pulse 4s infinite ease-in-out;
+}
+
+.Skills img:hover {
+    transform: scale(1.5);
+    filter: brightness(1.6);
+}
+
+.Skills:hover img {
+    animation: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Default size */
+    }
+    50% {
+        transform: scale(1.1); /* Slightly enlarge */
+    }
+    100% {
+        transform: scale(1); /* Back to normal size */
+    }
+}
+
+.contact-info {
+    text-align: right;
+    overflow: hidden;
+    padding: 2px;
+    position: relative;
+}
+
+.contact-info li {
+    display: inline-block;
+    padding: 5px;
+    border-right: 1px solid #808080;
+}
+
+.contact-info li a:hover {
+    color: #6A0DAD;
+}
+
+
+
+
+
+.Proj {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.project-card {
+  width: 300px;
+  background-color: #999999;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  transform: scale(1.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.project-info p {
+  padding: 10px 0px;
+  font-size: 0.95rem;
+  color: #000;
+}
+
+.project-info a {
+  color: #000;
+}
+
+.project-info a:hover {
+  color: #6A0DAD;
+}
+
+
+
+
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.7); /* Darker overlay for better contrast */
+  z-index: 1000;
+  backdrop-filter: blur(3px); /* Optional blur for background */
+}
+
+.popup-content {
+  background-color: #1c1c1c; /* Dark background matching the page */
+  color: #FFF; /* White text */
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.popup-content h2 {
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #6A0DAD; /* Consistent color with the rest of your theme */
+}
+
+.popup-content .close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 24px;
+  color: #A9A9A9; /* Lighter close button color */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.popup-content .close:hover {
+  color: #FFF; /* White on hover for better contrast */
+}
+
+.popup-content input, .popup-content textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color: #333;
+  color: #FFF;
+}
+
+.popup-content input:focus, .popup-content textarea:focus {
+  outline: none;
+  border-color: #6A0DAD; /* Highlight with your purple */
+}
+
+.popup-content button[type="submit"] {
+  background-color: #6A0DAD; /* Consistent color theme */
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-content button[type="submit"]:hover {
+  background-color: #9b2cdb; /* Lighter purple on hover */
+}
